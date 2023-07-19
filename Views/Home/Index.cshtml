@@ -1,0 +1,30 @@
+﻿@model List<Product>
+
+@{
+    ViewData["Title"] = "Products";
+    Layout = "_MyLayout";
+}
+
+<h2>Products</h2>
+
+<table>
+    <tr>
+        <th>ProductId</th>
+        <th>ProductName</th>
+        <th>Rate</th>
+        <th>Description</th>
+        <th>CategoryName</th>
+        <th></th>
+    </tr>
+    @foreach (var product in Model)
+    {
+        <tr>
+            <td>@product.ProductId</td>
+            <td>@product.ProductName</td>
+            <td>@product.Rate.ToString("F2")</td>
+            <td>@product.Description</td>
+            <td>@product.CategoryName</td>
+            <td><a asp-action="Edit" asp-route-id="@product.ProductId">Edit</a></td>
+        </tr>
+    }
+</table>
