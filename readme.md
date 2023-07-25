@@ -22,6 +22,7 @@ Should show all the Products in the following way
 104 Marker 30.00 descD Stationery Edit
 ```
 
+```
 2. Edit View (total 8 marks)
 ( for showing the view correctly -4 marks and updating the database(4 marks))
 Product Id ____________ (Display only, not editable)
@@ -31,7 +32,7 @@ Description _ ___________ (TextArea)
 Category ____________ (TextBox)
 Update --- (Button)
 Back to Index (Hyperlink)
-
+```
 (3 Marks for a, b and c)
 a) Ensure that all values must be entered before submitting them.
 b) Give proper error messages for all validations
