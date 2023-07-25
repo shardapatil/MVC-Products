@@ -33,6 +33,7 @@ Category ____________ (TextBox)
 Update --- (Button)
 Back to Index (Hyperlink)
 ```
+```
 (3 Marks for a, b and c)
 a) Ensure that all values must be entered before submitting them.
 b) Give proper error messages for all validations
@@ -44,3 +45,4 @@ Back to Index (Hyperlink).
 Create hyperlinks to take you to your Views.
 (Do not use or change the existing _Layout.cshtml page)
 (5 marks for Qs No 4)
+```
