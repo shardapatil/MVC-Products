@@ -143,7 +143,6 @@ namespace LabExam.Models
             return 0;
         }
 
-
         //delete using sp
         public static int Delete(int ProdID)
         {
@@ -161,7 +160,6 @@ namespace LabExam.Models
                 cmd.Parameters.AddWithValue("@ProductId", ProdID);
 
                 int Status = cmd.ExecuteNonQuery();
-
 
                 if (Status > 0)
                 {
@@ -198,7 +196,6 @@ namespace LabExam.Models
                 cmd.Parameters.AddWithValue("@Description", obj.Description);
                 cmd.Parameters.AddWithValue("@CategoryName", obj.CategoryName);
 
-
                 int cnt = cmd.ExecuteNonQuery();
 
                 if (cnt > 0)
@@ -208,7 +205,6 @@ namespace LabExam.Models
             }
             catch (Exception ex)
             {
-
                 Console.WriteLine(ex.Message);
             }
             finally
