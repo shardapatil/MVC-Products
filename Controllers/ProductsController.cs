@@ -42,8 +42,6 @@ namespace LabExam.Controllers
                 {
                     return View();
                 }
-
-
             }
             catch
             {
@@ -73,15 +71,12 @@ namespace LabExam.Controllers
                 else
                 {
                     ViewBag.message("Failed To Update");
-
                 }
-
             }
             catch (Exception e)
             {
 
             }
-
             return View();
         }
 
@@ -108,7 +103,6 @@ namespace LabExam.Controllers
                 {
                     ViewBag.alert("Failed to delete");
                     return RedirectToAction(nameof(Delete));
-
                 }
             }
             catch
